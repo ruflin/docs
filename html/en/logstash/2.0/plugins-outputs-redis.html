@@ -168,11 +168,11 @@
 <script type="text/javascript">
   var active;
   
-  active = Math.random() < 1 //0.9 
+  active = Math.random() < 1
   
   elasticApm.init({
     active: active,
-    serviceName: "elastic-co-frontend",
+    serviceName: "elastic-co-test",
     serverUrl: "https://elastic-co-apm-server.app.elstc.co"
   })
 
@@ -222,7 +222,7 @@
   }
 
   console.log('apm pageLoadName:', pageLoadName, parts)
-  elasticApm.setTags({env:"production"});
+  elasticApm.setTags({env:"staging"});
   elasticApm.setInitialPageLoadName(pageLoadName);
 </script>
 

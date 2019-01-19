@@ -168,11 +168,11 @@
 <script type="text/javascript">
   var active;
   
-  active = Math.random() < 1 //0.9 
+  active = Math.random() < 1
   
   elasticApm.init({
     active: active,
-    serviceName: "elastic-co-frontend",
+    serviceName: "elastic-co-test",
     serverUrl: "https://elastic-co-apm-server.app.elstc.co"
   })
 
@@ -222,7 +222,7 @@
   }
 
   console.log('apm pageLoadName:', pageLoadName, parts)
-  elasticApm.setTags({env:"production"});
+  elasticApm.setTags({env:"staging"});
   elasticApm.setInitialPageLoadName(pageLoadName);
 </script>
 
@@ -723,10 +723,6 @@ varies by platform. To locate the file, see <a class="xref" href="directory-layo
 <a class="xref" href="configuration-template.html" title="Load the Elasticsearch index template"><em>Load the Elasticsearch index template</em></a>
 </li><li class="listitem">
 <a class="xref" href="configuration-logging.html" title="Configure logging"><em>Configure logging</em></a>
-</li><li class="listitem">
-<a class="xref" href="setup-kibana-endpoint.html" title="Set up the Kibana endpoint"><em>Set up the Kibana endpoint</em></a>
-</li><li class="listitem">
-<a class="xref" href="configuration-dashboards.html" title="Load the Kibana dashboards"><em>Load the Kibana dashboards</em></a>
 </li><li class="listitem">
 <a class="xref" href="configuration-rum.html" title="Set up Real User Monitoring (RUM) support"><em>Set up Real User Monitoring (RUM) support</em></a>
 </li><li class="listitem">
